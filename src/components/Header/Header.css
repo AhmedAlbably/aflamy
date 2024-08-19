@@ -1,0 +1,94 @@
+.header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #2f2f2f;
+  color: white;
+  box-shadow: 3px 3px 3px #000000;
+}
+
+.logo {
+  color: rgb(0, 255, 255);
+  border-radius: 50%;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 10px rgb(0, 255, 255);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition-property: box-shadow;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.logo-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  cursor: pointer;
+  animation: moveUpDown 3s ease-in-out infinite;
+  -webkit-animation: moveUpDown 3s ease-in-out infinite;
+}
+
+.logo-img:hover {
+  animation-play-state: paused; /* Pauses the animation on hover */
+}
+
+@keyframes moveUpDown {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 10px; /* Adjust to how far you want the image to move down */
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.search-input {
+  width: 70%;
+}
+
+.search-input input {
+  padding: 10px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+}
+
+.search-input input::placeholder {
+  color: white;
+  font-size: 20px;
+  opacity: 0.5;
+  font-style: italic;
+  font-weight: 100;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-input input:focus {
+  color: rgb(0, 255, 255);
+  background-color: #3b3b3b;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 15px rgb(0, 255, 255);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition-property: box-shadow;
+}

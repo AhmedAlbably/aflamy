@@ -1,0 +1,163 @@
+.movie-details {
+  padding: 20px;
+  margin-top: 50px;
+  display: flex ;
+  gap: 30px;
+  justify-self: space-between;
+  flex-direction: row;
+  align-items: center;
+  background-color: #2f2f2f;
+  color: white;
+  box-shadow: 3px 3px 3px #000000;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: rgb(0, 255, 255);
+  background-color: #3b3b3b;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 10px rgb(0, 255, 255);
+  transition: 0.5s;
+}
+
+.movie-details .image {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.movie-details img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  color: rgb(0, 255, 255);
+  background-color: #3b3b3b;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: -3px -3px 10px rgb(0, 255, 255);
+  transition: 0.5s;
+}
+
+
+
+
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.options {
+  display: flex; 
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+}
+
+.options .watch {
+  background-color: rgba(10, 136, 136, 0.589);
+  border: none;
+  color: #2f2f2f;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 3px 3px 3px #000000;
+  text-decoration: none;
+}
+
+.options .watch:hover {
+  color: rgb(0, 255, 255);
+  background-color: #3b3b3b;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: 3px 3px 3px 1px rgb(0, 255, 255);
+  transition: 0.5s;
+}
+
+.options .home {
+  background-color: teal;
+  border: none;
+  color: #2f2f2f;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 3px 3px 3px #000000;
+  text-decoration: none;
+}
+
+.options .home:hover {
+  color: rgb(0, 255, 255);
+  background-color: #3b3b3b;
+  outline-color: rgb(0, 255, 255);
+  box-shadow: 3px 3px 3px 1px rgb(0, 255, 255);
+  transition: 0.5s;
+}
+
+/* Extra small devices (phones, 320px and up) */
+@media (min-width: 320px) {
+  /* Your styles here */
+}
+
+/* Small devices (phones, 375px and up) */
+@media (min-width: 375px) {
+  /* Your styles here */
+}
+
+/* Medium devices (large phones, 425px and up) */
+@media (max-width: 500px) {
+  .movie-details .image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+  }
+
+  .options {
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+  }
+  
+  
+}
+
+/* Large devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .movie-details {
+    padding: 20px;
+    margin-top: 50px;
+    display: flex ;
+    gap: 20px;
+    justify-self: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+
+/* Extra large devices (large tablets, 1024px and up) */
+@media (min-width: 1024px) {
+  /* Your styles here */
+}
